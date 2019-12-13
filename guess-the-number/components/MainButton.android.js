@@ -1,10 +1,17 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity, TouchableNativeFeedback, Platform } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  TouchableNativeFeedback,
+  Platform
+} from "react-native";
 import Colors from "../constants/colors";
 
 const MainButton = props => {
   let ButtonComponent = TouchableOpacity;
-  if (Platform.OS === 'android' && Platform.Version >= 21) {
+  if (Platform.OS === "android" && Platform.Version >= 21) {
     ButtonComponent = TouchableNativeFeedback;
   }
 
@@ -28,7 +35,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     borderRadius: 25,
-    overflow: 'hidden'
+    overflow: "hidden"
   },
   buttonText: {
     color: "white",
