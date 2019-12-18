@@ -8,7 +8,7 @@ import {
   TouchableNativeFeedback
 } from "react-native";
 
-const CategoryGridTile = ({ title, onSelect, color }) => {
+const CategoryGridTile = props => {
   let TouchableCmp = TouchableOpacity;
 
   if (Platform.OS === "android" && Platform.Version >= 21) {
