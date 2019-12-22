@@ -2,11 +2,10 @@ import React, { useEffect, useCallback, useReducer } from 'react';
 import {
   View,
   ScrollView,
-  Text,
-  TextInput,
   StyleSheet,
   Platform,
-  Alert
+  Alert,
+  KeyboardAvoidingView
 } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import { useSelector, useDispatch } from 'react-redux';
@@ -109,6 +108,7 @@ const EditProductScreen = props => {
   );
 
   return (
+    <KeyboardAvoidingView style={{flex: 1}} behavior='padding' keyboardVerticalOffset={100}>
     <ScrollView>
       <View style={styles.form}>
         <Input
@@ -164,6 +164,7 @@ const EditProductScreen = props => {
         />
       </View>
     </ScrollView>
+    </KeyboardAvoidingView>
   );
 };
 
