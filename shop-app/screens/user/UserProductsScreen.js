@@ -10,6 +10,7 @@ import * as productsActions from '../../store/actions/products';
 import EditProductScreen from './EditProductScreen';
 
 const UserProductsScreen = props => {
+
     const userProducts = useSelector(state => state.products.userProducts);
     const dispatch = useDispatch();
 
