@@ -1,13 +1,12 @@
 {
   "expo": {
-    "name": "RN Guide",
-    "slug": "rn-complete-guide",
+    "name": "Acapella",
+    "slug": "acapella-shop-app",
     "privacy": "public",
-    "sdkVersion": "33.0.0",
+    "sdkVersion": "34.0.0",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,7 +23,14 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.acapella.acapella-shop-app",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
+    },
+    "description": "Acapella is a nonprofit app made by students from the University of Information and Technology - VNU-HCM in Vietnam",
+    "android": {
+      "package": "com.acapella.acapella_shop_app",
+      "versionCode": 1
     }
   }
 }
